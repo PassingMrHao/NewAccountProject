@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- 上面的布局为桌面布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <mrhao.com.youyuaccount.widget.MyNoSlideViewpager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relay_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/relay_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_above="@+id/bottom_menu"
+                android:background="#d4d4d4" />
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                app:itemTextColor="@drawable/mybottom_menu_textselect"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/mydesign_bottom_menu" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_addAccount"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:src="@mipmap/add_accpunt" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/cehua_menu" />
+    </RelativeLayout>
+
+    <!-- 下面的布局为抽屉布局 ，必须添加属性： android:layout_gravity="left"-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffcb57"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

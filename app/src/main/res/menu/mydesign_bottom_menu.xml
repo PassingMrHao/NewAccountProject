@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottommenu1"
+        android:enabled="true"
+        android:icon="@drawable/bottomenu_back1"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottommenu2"
+        android:enabled="true"
+        android:icon="@drawable/bottomenu_back2"
+        android:title="资产"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bottommenu_middle"
+        android:enabled="true"
+        android:icon="@null"
+        android:title="" />
+
+    <item
+        android:id="@+id/bottommenu3"
+        android:enabled="true"
+        android:icon="@drawable/bottomenu_back3"
+        android:title="发现"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottommenu4"
+        android:enabled="true"
+        android:icon="@drawable/bottomenu_back4"
+        android:title="我的"
+        app:showAsAction="ifRoom" />
+
+</menu>
