@@ -45,4 +45,5 @@ public class HomePageFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
+
 }

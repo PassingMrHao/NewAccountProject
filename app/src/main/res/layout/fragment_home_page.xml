@@ -55,7 +55,9 @@
         android:layout_marginTop="-88dp"
         android:layout_marginRight="18dp"
         android:background="@drawable/lay_roundback"
-        android:elevation="8dp"></LinearLayout>
+        android:elevation="8dp">
+
+    </LinearLayout>
 
 
 </LinearLayout>
